@@ -1,0 +1,4 @@
+# Created at 2021-02-02T00:17:20.590
+Boot Manifest-JAR contains absolute paths in classpath 'D:\BillieMission2120Task\BillieMission2120TestFramework\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
