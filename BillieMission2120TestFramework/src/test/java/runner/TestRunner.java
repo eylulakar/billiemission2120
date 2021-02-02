@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 @CucumberOptions(
         plugin = {"pretty", "html:target/cucumber"},
         glue ={"stepdefinitions"},
-        features = {"src/test/resources/features/makeBooking.feature"}
+        features = {"src/test/resources/features"}
 
 )
 public class TestRunner extends AbstractTestNGCucumberTests {

@@ -1,9 +1,8 @@
 package webservice.serviceclient;
 
-public class BookingServiceResponse<T> {
+public class BookingServiceResponse<T> extends ServiceResponse {
 
     private T _body;
-    private int _statusCode;
 
     public BookingServiceResponse(T body, int statusCode) {
         _body = body;
@@ -12,9 +11,5 @@ public class BookingServiceResponse<T> {
 
     public T getResult() {
         return _body;
-    }
-
-    public int getStatusCode() {
-        return _statusCode;
     }
 }

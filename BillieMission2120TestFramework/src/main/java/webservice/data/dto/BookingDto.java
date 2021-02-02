@@ -7,7 +7,7 @@ public class BookingDto {
 
     private String firstName;
     private String lastName;
-    private Integer totalPrice;
+    private String totalPrice;
     private Boolean depositPaid;
     private BookingDatesDto bookingDates;
     private String additionalNeeds;
@@ -30,12 +30,17 @@ public class BookingDto {
         this.lastName = lastName;
     }
 
-    public Integer getTotalPrice() {
-        return totalPrice;
+    public String getTotalPrice() {
+        return totalPrice.toString();
     }
 
     @JsonProperty("totalprice")
     public void setTotalPrice(Integer totalPrice) {
+        this.totalPrice = totalPrice.toString();
+    }
+
+    @JsonProperty("totalprice")
+    public void setTotalPrice(String totalPrice) {
         this.totalPrice = totalPrice;
     }
 

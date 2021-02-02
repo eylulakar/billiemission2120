@@ -81,7 +81,7 @@ public class BookingServiceClient {
         request = new Request.Builder()
                 .url(serviceUrl + "/booking/" + bookingId)
                 .method("GET", null)
-                .addHeader("Accept", "application/json")
+                .addHeader("Accept", applicationJsonString)
                 .build();
         Response response = httpClient.newCall(request).execute();
         String bodyString = response.body().string();

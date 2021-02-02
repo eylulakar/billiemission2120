@@ -12,64 +12,82 @@ import webservice.data.resource.BookingResource;
 import webservice.data.resource.CreateBookingResource;
 import webservice.serviceclient.BookingServiceClient;
 import webservice.serviceclient.BookingServiceResponse;
+import webservice.serviceclient.ServiceResponse;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 @ScenarioScoped
 public class StepDefinitions {
     private final BookingServiceClient serviceClient = new BookingServiceClient();
-    private static BookingServiceResponse<CreateBookingResource> createBookingServiceResponse;
-    private static BookingServiceResponse<BookingResource> updateBookingServiceResponse;
-    private static BookingServiceResponse<BookingResource> getBookingServiceResponse;
-    private static BookingServiceResponse<?> deleteBookingServiceResponse;
-    private static BookingDto createBookingDto;
-    private static BookingDto updateBookingDto;
-    private static BookingResource bookingResource;
-    private static int bookingId;
-    private static int responseCode;
-    private static String authToken;
 
-    @Given("I set create booking request body json")
-    public void prepareCreateBookingObject() throws Exception {
+    private static String authToken;
+    private static String currentKey = "default";
+    private static Map<String, BookingDto> requestObjects = new HashMap<>();
+    private static Map<String, Object> responseObjects = new HashMap<>();
+    private static boolean isException = false;
+
+    @Given("^I set create booking request object (.+)$")
+    public void prepareCreateBookingObject(String scenario) throws Exception {
+        currentKey = scenario;
         BookingDatesDto bookingDatesDto = BookingDatesDto.createBookingDatesDto("2015-07-18", "2015-07-20");
-        createBookingDto = BookingDto.createBookingDto("testFirstName", "testLastName", 50, true, "Sports", bookingDatesDto);
+        BookingDto createBookingDto = BookingDto.createBookingDto("testFirstName", "testLastName", 50, true, "Sports",
+                bookingDatesDto);
+        requestObjects.put(currentKey, createBookingDto);
     }
 
     @When("I send create booking http request")
     public void sendCreateBookingRequest() throws Exception {
-        createBookingServiceResponse = serviceClient.createBooking(createBookingDto);
-        responseCode = createBookingServiceResponse.getStatusCode();
+        BookingServiceResponse<CreateBookingResource> createBookingServiceResponse =
+                serviceClient.createBooking(requestObjects.get(currentKey));
+        responseObjects.put(currentKey, createBookingServiceResponse);
     }
 
     @Then("Response status should be {int}")
     public void checkResponseStatus(int statusCode) {
-        assertThat(responseCode).isEqualTo(statusCode);
+        ServiceResponse serviceResponse = ((ServiceResponse) responseObjects.get(currentKey));
+
+        assertThat(serviceResponse.getStatusCode()).isEqualTo(statusCode);
     }
 
-    @And("Response body object booking matches create booking request object")
+    @And("Response contains correct booking information")
     public void checkCreateBookingResponseBookingObject() {
-        BookingResource bookingResource = createBookingServiceResponse.getResult().getBookingResource();
+        BookingServiceResponse<CreateBookingResource> createBookingResponse = (BookingServiceResponse<CreateBookingResource>) responseObjects.get(currentKey);
+        BookingResource bookingResource = createBookingResponse.getResult().getBookingResource();
+
+        BookingDto createBookingDto = requestObjects.get(currentKey);
 
         assertThat(bookingResource.getFirstName()).isEqualTo(createBookingDto.getFirstName());
         assertThat(bookingResource.getLastName()).isEqualTo(createBookingDto.getLastName());
         assertThat(bookingResource.getAdditionalNeeds()).isEqualTo(createBookingDto.getAdditionalNeeds());
-        assertThat(bookingResource.getTotalPrice()).isEqualTo(createBookingDto.getTotalPrice());
+        assertThat(bookingResource.getTotalPrice().toString()).isEqualTo(createBookingDto.getTotalPrice());
         assertThat(bookingResource.getDepositPaid()).isEqualTo(createBookingDto.getDepositPaid());
         assertThat(bookingResource.getBookingDates()).isNotNull();
         assertThat(bookingResource.getBookingDates().getCheckIn()).isEqualTo(createBookingDto.getBookingDates().getCheckIn());
         assertThat(bookingResource.getBookingDates().getCheckOut()).isEqualTo(createBookingDto.getBookingDates().getCheckOut());
     }
 
-    @And("Response body object has non-null id value")
+    @And("Response has non-null id value")
     public void checkCreateBookingResponseId() {
-        assertThat(createBookingServiceResponse.getResult().getBookingId()).isNotNull();
-        bookingId = createBookingServiceResponse.getResult().getBookingId();
+        BookingServiceResponse<CreateBookingResource> createBookingResponse = (BookingServiceResponse<CreateBookingResource>) responseObjects.get(currentKey);
+        Integer bookingId = createBookingResponse.getResult().getBookingId();
+
+        assertThat(bookingId).isNotNull();
+    }
+
+    @And("^Set total price to (.+)$")
+    public void setPrice(String price) {
+        requestObjects.get(currentKey);
     }
 
     @Given("I have previously created booking")
     public void prepareUpdateBookingObject() {
         BookingDatesDto bookingDatesDto = BookingDatesDto.createBookingDatesDto("2015-07-22", "2015-07-25");
-        updateBookingDto = BookingDto.createBookingDto("testFirstName updated", "testLastName updated", 75, false, "Spa", bookingDatesDto);
+        BookingDto updateBookingDto = BookingDto.createBookingDto("testFirstName updated", "testLastName updated", 75,
+                false, "Spa", bookingDatesDto);
+        requestObjects.put(currentKey, updateBookingDto);
     }
 
     @And("I have authorisation data")
@@ -79,19 +97,37 @@ public class StepDefinitions {
 
     @When("I send update booking http request")
     public void sendUpdateBookingRequest() throws Exception {
-        updateBookingServiceResponse = serviceClient.updateBooking(authToken, bookingId, updateBookingDto);
-        bookingResource = updateBookingServiceResponse.getResult();
-        responseCode = updateBookingServiceResponse.getStatusCode();
+        BookingServiceResponse<CreateBookingResource> createBookingResponse = (BookingServiceResponse<CreateBookingResource>) responseObjects.get(currentKey);
+        BookingDto updateBookingDto = requestObjects.get(currentKey);
+
+        BookingServiceResponse<BookingResource> updateBookingServiceResponse;
+
+        try {
+            updateBookingServiceResponse = serviceClient.updateBooking(authToken, createBookingResponse.getResult().getBookingId(),
+                    updateBookingDto);
+            responseObjects.put(currentKey, updateBookingServiceResponse);
+            isException = false;
+        } catch (Exception e) {
+            isException = true;
+        }
+
+    }
+
+    @And("Should throw exception")
+    public void hasException() {
+        assertThat(isException).isTrue();
     }
 
     @And("Response body object booking matches update booking request object")
     public void checkBookingResponseBookingObject() {
-        BookingResource updateBookingResource = updateBookingServiceResponse.getResult();
+        BookingServiceResponse<BookingResource> updateBookingServiceResponse = (BookingServiceResponse<BookingResource>) responseObjects.get(currentKey);
+        BookingDto updateBookingDto = requestObjects.get(currentKey);
+        BookingResource bookingResource = updateBookingServiceResponse.getResult();
 
         assertThat(bookingResource.getFirstName()).isEqualTo(updateBookingDto.getFirstName());
         assertThat(bookingResource.getLastName()).isEqualTo(updateBookingDto.getLastName());
         assertThat(bookingResource.getAdditionalNeeds()).isEqualTo(updateBookingDto.getAdditionalNeeds());
-        assertThat(bookingResource.getTotalPrice()).isEqualTo(updateBookingDto.getTotalPrice());
+        assertThat(bookingResource.getTotalPrice().toString()).isEqualTo(updateBookingDto.getTotalPrice());
         assertThat(bookingResource.getDepositPaid()).isEqualTo(updateBookingDto.getDepositPaid());
         assertThat(bookingResource.getBookingDates()).isNotNull();
         assertThat(bookingResource.getBookingDates().getCheckIn()).isEqualTo(updateBookingDto.getBookingDates().getCheckIn());
@@ -100,14 +136,32 @@ public class StepDefinitions {
 
     @When("I send get booking http request")
     public void sendGetBookingRequest() throws Exception {
-        getBookingServiceResponse = serviceClient.getBooking(bookingId);
-        bookingResource = getBookingServiceResponse.getResult();
-        responseCode = getBookingServiceResponse.getStatusCode();
+        BookingServiceResponse<CreateBookingResource> createBookingResponse = (BookingServiceResponse<CreateBookingResource>) responseObjects.get(currentKey);
+
+        try {
+            BookingServiceResponse<BookingResource> getBookingServiceResponse =
+                    serviceClient.getBooking(createBookingResponse.getResult().getBookingId());
+            responseObjects.put(currentKey, getBookingServiceResponse);
+            isException = false;
+        }catch (Exception e){
+            isException = true;
+        }
+
     }
 
     @When("I send delete booking http request")
     public void sendDeleteBookingRequest() throws Exception {
-        deleteBookingServiceResponse = serviceClient.deleteBooking(authToken, bookingId);
-        responseCode = deleteBookingServiceResponse.getStatusCode();
+        BookingServiceResponse<CreateBookingResource> createBookingResponse = (BookingServiceResponse<CreateBookingResource>) responseObjects.get(currentKey);
+
+        BookingServiceResponse<?> deleteBookingServiceResponse = serviceClient.deleteBooking(authToken,
+                createBookingResponse.getResult().getBookingId());
+        responseObjects.put(currentKey, deleteBookingServiceResponse);
+    }
+
+    @And("^I change dates to (.+) and (.+)$")
+    public void prepareBookingDates(String checkIn, String checkOut) {
+        BookingDto bookingDto = requestObjects.get(currentKey);
+        bookingDto.setBookingDates(BookingDatesDto.createBookingDatesDto(checkIn, checkOut));
+        requestObjects.put(currentKey, bookingDto);
     }
 }
