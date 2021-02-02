@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="7" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-02-02T23:17:58 TRT" name="Surefire suite" finished-at="2021-02-02T23:18:12 TRT" duration-ms="13127">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@15bb6bea]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2021-02-02T23:17:58 TRT" name="Surefire test" finished-at="2021-02-02T23:18:12 TRT" duration-ms="13127">
+      <class name="runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.TestRunner@15bb6bea]" started-at="2021-02-02T23:17:58 TRT" name="setUpClass" finished-at="2021-02-02T23:17:59 TRT" duration-ms="610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@15bb6bea]" started-at="2021-02-02T23:17:59 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-02T23:18:01 TRT" duration-ms="2215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create booking"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Create booking]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@15bb6bea]" started-at="2021-02-02T23:18:01 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-02T23:18:02 TRT" duration-ms="892" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create booking fails due to malformed total price"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Create booking]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<[4]00> but was:<[2]00>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: expected:<[4]00> but was:<[2]00>
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at stepdefinitions.StepDefinitions.checkResponseStatus(StepDefinitions.java:52)
+at ✽.Response status should be 400(file:///D:/Projects/billiemission2120/BillieMission2120TestFramework/src/test/resources/features/createBooking.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@15bb6bea]" started-at="2021-02-02T23:18:02 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-02T23:18:03 TRT" duration-ms="849" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create booking fails due to malformed total price"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Create booking]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<[4]00> but was:<[2]00>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: expected:<[4]00> but was:<[2]00>
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at stepdefinitions.StepDefinitions.checkResponseStatus(StepDefinitions.java:52)
+at ✽.Response status should be 400(file:///D:/Projects/billiemission2120/BillieMission2120TestFramework/src/test/resources/features/createBooking.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@15bb6bea]" started-at="2021-02-02T23:18:03 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-02T23:18:04 TRT" duration-ms="859" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create booking fails due to malformed total price"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Create booking]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@15bb6bea]" started-at="2021-02-02T23:18:04 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-02T23:18:05 TRT" duration-ms="1124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete booking by id"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Delete booking.]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@15bb6bea]" started-at="2021-02-02T23:18:05 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-02T23:18:06 TRT" duration-ms="1073" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get booking by id"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Get booking]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@15bb6bea]" started-at="2021-02-02T23:18:06 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-02T23:18:07 TRT" duration-ms="1009" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Update booking"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Update booking]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@15bb6bea]" started-at="2021-02-02T23:18:07 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-02T23:18:08 TRT" duration-ms="1111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Update booking fails due to wrong date"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Update booking]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@15bb6bea]" started-at="2021-02-02T23:18:08 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-02T23:18:09 TRT" duration-ms="1089" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Update booking fails due to wrong date"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Update booking]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[
+Expecting value to be true but was false expected:<[tru]e> but was:<[fals]e>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: 
+Expecting value to be true but was false expected:<[tru]e> but was:<[fals]e>
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at stepdefinitions.StepDefinitions.hasException(StepDefinitions.java:118)
+at ✽.Should throw exception(file:///D:/Projects/billiemission2120/BillieMission2120TestFramework/src/test/resources/features/updateBooking.feature:18)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@15bb6bea]" started-at="2021-02-02T23:18:09 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-02T23:18:10 TRT" duration-ms="1068" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Update booking fails due to wrong date"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Update booking]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[
+Expecting value to be true but was false expected:<[tru]e> but was:<[fals]e>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: 
+Expecting value to be true but was false expected:<[tru]e> but was:<[fals]e>
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at stepdefinitions.StepDefinitions.hasException(StepDefinitions.java:118)
+at ✽.Should throw exception(file:///D:/Projects/billiemission2120/BillieMission2120TestFramework/src/test/resources/features/updateBooking.feature:18)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@15bb6bea]" started-at="2021-02-02T23:18:10 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-02T23:18:11 TRT" duration-ms="1007" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Update booking fails due to wrong date"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Update booking]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@15bb6bea]" started-at="2021-02-02T23:18:11 TRT" name="tearDownClass" finished-at="2021-02-02T23:18:12 TRT" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

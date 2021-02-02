@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runner.TestRunner" time="13.941" tests="11" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.specification.version" value="15"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Projects\billiemission2120\BillieMission2120TestFramework\target\test-classes;D:\Projects\billiemission2120\BillieMission2120TestFramework\target\classes;C:\Users\z003t7fe\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\z003t7fe\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\z003t7fe\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\z003t7fe\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\z003t7fe\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\z003t7fe\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\z003t7fe\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Users\z003t7fe\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\z003t7fe\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\z003t7fe\.m2\repository\com\google\guava\guava\25.1-android\guava-25.1-android.jar;C:\Users\z003t7fe\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\z003t7fe\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\z003t7fe\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\z003t7fe\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\z003t7fe\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\z003t7fe\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\cucumber-java\6.9.1\cucumber-java-6.9.1.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\cucumber-core\6.9.1\cucumber-core-6.9.1.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\cucumber-gherkin\6.9.1\cucumber-gherkin-6.9.1.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.9.1\cucumber-gherkin-messages-6.9.1.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\messages\13.2.1\messages-13.2.1.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\cucumber-plugin\6.9.1\cucumber-plugin-6.9.1.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\docstring\6.9.1\docstring-6.9.1.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\html-formatter\9.0.0\html-formatter-9.0.0.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\create-meta\2.0.4\create-meta-2.0.4.jar;C:\Users\z003t7fe\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\cucumber-testng\6.9.1\cucumber-testng-6.9.1.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.7.0\maven-compiler-plugin-3.7.0.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\z003t7fe\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\z003t7fe\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\z003t7fe\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\z003t7fe\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.4\plexus-utils-2.0.4.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\maven-core\3.0\maven-core-3.0.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\maven-settings\3.0\maven-settings-3.0.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\maven-settings-builder\3.0\maven-settings-builder-3.0.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\maven-repository-metadata\3.0\maven-repository-metadata-3.0.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\maven-model-builder\3.0\maven-model-builder-3.0.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\maven-aether-provider\3.0\maven-aether-provider-3.0.jar;C:\Users\z003t7fe\.m2\repository\org\sonatype\aether\aether-impl\1.7\aether-impl-1.7.jar;C:\Users\z003t7fe\.m2\repository\org\sonatype\aether\aether-spi\1.7\aether-spi-1.7.jar;C:\Users\z003t7fe\.m2\repository\org\sonatype\aether\aether-api\1.7\aether-api-1.7.jar;C:\Users\z003t7fe\.m2\repository\org\sonatype\aether\aether-util\1.7\aether-util-1.7.jar;C:\Users\z003t7fe\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\z003t7fe\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\z003t7fe\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\z003t7fe\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\z003t7fe\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.1.0\maven-shared-utils-3.1.0.jar;C:\Users\z003t7fe\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\z003t7fe\.m2\repository\org\codehaus\plexus\plexus-java\0.9.2\plexus-java-0.9.2.jar;C:\Users\z003t7fe\.m2\repository\org\ow2\asm\asm\6.0_BETA\asm-6.0_BETA.jar;C:\Users\z003t7fe\.m2\repository\com\thoughtworks\qdox\qdox\2.0-M7\qdox-2.0-M7.jar;C:\Users\z003t7fe\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.8.2\plexus-compiler-api-2.8.2.jar;C:\Users\z003t7fe\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.8.2\plexus-compiler-manager-2.8.2.jar;C:\Users\z003t7fe\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.8.2\plexus-compiler-javac-2.8.2.jar;C:\Users\z003t7fe\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.1\jackson-databind-2.12.1.jar;C:\Users\z003t7fe\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.1\jackson-annotations-2.12.1.jar;C:\Users\z003t7fe\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.1\jackson-core-2.12.1.jar;C:\Users\z003t7fe\.m2\repository\com\squareup\okhttp3\okhttp\4.9.0\okhttp-4.9.0.jar;C:\Users\z003t7fe\.m2\repository\com\squareup\okio\okio\2.8.0\okio-2.8.0.jar;C:\Users\z003t7fe\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.4.0\kotlin-stdlib-common-1.4.0.jar;C:\Users\z003t7fe\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.4.10\kotlin-stdlib-1.4.10.jar;C:\Users\z003t7fe\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\z003t7fe\.m2\repository\org\assertj\assertj-core\3.19.0\assertj-core-3.19.0.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\cucumber-guice\6.9.1\cucumber-guice-6.9.1.jar;"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://www.azulsystems.com/"/>
+    <property name="user.timezone" value="Europe/Istanbul"/>
+    <property name="user.country.format" value="TR"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Zulu\zulu-15\bin"/>
+    <property name="sun.java.command" value="C:\Users\z003t7fe\AppData\Local\Temp\surefire7872424432558528252\surefirebooter14033253442917939435.jar C:\Users\z003t7fe\AppData\Local\Temp\surefire7872424432558528252 2021-02-02T23-17-56_979-jvmRun1 surefire7415824773555251919tmp surefire_08747124739885990384tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Projects\billiemission2120\BillieMission2120TestFramework\target\test-classes;D:\Projects\billiemission2120\BillieMission2120TestFramework\target\classes;C:\Users\z003t7fe\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\z003t7fe\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\z003t7fe\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\z003t7fe\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\z003t7fe\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\z003t7fe\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\z003t7fe\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Users\z003t7fe\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\z003t7fe\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\z003t7fe\.m2\repository\com\google\guava\guava\25.1-android\guava-25.1-android.jar;C:\Users\z003t7fe\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\z003t7fe\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\z003t7fe\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\z003t7fe\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\z003t7fe\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\z003t7fe\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\cucumber-java\6.9.1\cucumber-java-6.9.1.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\cucumber-core\6.9.1\cucumber-core-6.9.1.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\cucumber-gherkin\6.9.1\cucumber-gherkin-6.9.1.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.9.1\cucumber-gherkin-messages-6.9.1.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\messages\13.2.1\messages-13.2.1.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\cucumber-plugin\6.9.1\cucumber-plugin-6.9.1.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\docstring\6.9.1\docstring-6.9.1.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\html-formatter\9.0.0\html-formatter-9.0.0.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\create-meta\2.0.4\create-meta-2.0.4.jar;C:\Users\z003t7fe\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\cucumber-testng\6.9.1\cucumber-testng-6.9.1.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.7.0\maven-compiler-plugin-3.7.0.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\z003t7fe\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\z003t7fe\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\z003t7fe\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\z003t7fe\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.4\plexus-utils-2.0.4.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\maven-core\3.0\maven-core-3.0.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\maven-settings\3.0\maven-settings-3.0.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\maven-settings-builder\3.0\maven-settings-builder-3.0.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\maven-repository-metadata\3.0\maven-repository-metadata-3.0.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\maven-model-builder\3.0\maven-model-builder-3.0.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\maven-aether-provider\3.0\maven-aether-provider-3.0.jar;C:\Users\z003t7fe\.m2\repository\org\sonatype\aether\aether-impl\1.7\aether-impl-1.7.jar;C:\Users\z003t7fe\.m2\repository\org\sonatype\aether\aether-spi\1.7\aether-spi-1.7.jar;C:\Users\z003t7fe\.m2\repository\org\sonatype\aether\aether-api\1.7\aether-api-1.7.jar;C:\Users\z003t7fe\.m2\repository\org\sonatype\aether\aether-util\1.7\aether-util-1.7.jar;C:\Users\z003t7fe\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\z003t7fe\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\z003t7fe\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\z003t7fe\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\z003t7fe\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.1.0\maven-shared-utils-3.1.0.jar;C:\Users\z003t7fe\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\z003t7fe\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\z003t7fe\.m2\repository\org\codehaus\plexus\plexus-java\0.9.2\plexus-java-0.9.2.jar;C:\Users\z003t7fe\.m2\repository\org\ow2\asm\asm\6.0_BETA\asm-6.0_BETA.jar;C:\Users\z003t7fe\.m2\repository\com\thoughtworks\qdox\qdox\2.0-M7\qdox-2.0-M7.jar;C:\Users\z003t7fe\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.8.2\plexus-compiler-api-2.8.2.jar;C:\Users\z003t7fe\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.8.2\plexus-compiler-manager-2.8.2.jar;C:\Users\z003t7fe\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.8.2\plexus-compiler-javac-2.8.2.jar;C:\Users\z003t7fe\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.1\jackson-databind-2.12.1.jar;C:\Users\z003t7fe\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.1\jackson-annotations-2.12.1.jar;C:\Users\z003t7fe\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.1\jackson-core-2.12.1.jar;C:\Users\z003t7fe\.m2\repository\com\squareup\okhttp3\okhttp\4.9.0\okhttp-4.9.0.jar;C:\Users\z003t7fe\.m2\repository\com\squareup\okio\okio\2.8.0\okio-2.8.0.jar;C:\Users\z003t7fe\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.4.0\kotlin-stdlib-common-1.4.0.jar;C:\Users\z003t7fe\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.4.10\kotlin-stdlib-1.4.10.jar;C:\Users\z003t7fe\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\z003t7fe\.m2\repository\org\assertj\assertj-core\3.19.0\assertj-core-3.19.0.jar;C:\Users\z003t7fe\.m2\repository\io\cucumber\cucumber-guice\6.9.1\cucumber-guice-6.9.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\z003t7fe"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-10-20"/>
+    <property name="java.home" value="C:\Program Files\Zulu\zulu-15"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Projects\billiemission2120\BillieMission2120TestFramework"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\z003t7fe\AppData\Local\Temp\surefire7872424432558528252\surefirebooter14033253442917939435.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="15.0.1+9"/>
+    <property name="user.name" value="z003t7fe"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1254"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Zulu15.28+51-CA"/>
+    <property name="localRepository" value="C:\Users\z003t7fe\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azulsystems.com/support/"/>
+    <property name="java.io.tmpdir" value="C:\Users\z003t7fe\AppData\Local\Temp\"/>
+    <property name="java.version" value="15.0.1"/>
+    <property name="user.dir" value="D:\Projects\billiemission2120\BillieMission2120TestFramework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.language.format" value="tr"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Zulu\zulu-15\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\z003t7fe\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\z003t7fe\bin;C:\Program Files\Zulu\zulu-8-jre\bin;C:\Program Files (x86)\Zulu\zulu-8-jre\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\nodejs;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;C:\ProgramData\Maven\apache-maven-3.6.3\bin;C:\Program Files\IcedTeaWeb\WebStart\bin;C:\Program Files\Zulu\zulu-15\bin;C:\Users\z003t7fe\AppData\Local\Programs\Python\Python38-32\Scripts;C:\Users\z003t7fe\AppData\Local\Programs\Python\Python38-32;C:\Users\z003t7fe\AppData\Local\Microsoft\WindowsApps;C:\Users\z003t7fe\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\z003t7fe\AppData\Roaming\npm;C:\Users\z003t7fe\AppData\Local\GitHubDesktop\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="15.0.1+9"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="59.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Create booking&quot;, &quot;Optional[Create booking]&quot;](1)" classname="runner.TestRunner" time="2.227">
+    <system-out><![CDATA[
+Scenario: Create booking                            &amp#27;[90m# src/test/resources/features/createBooking.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI set create booking request object &amp#27;[0m&amp#27;[32m&amp#27;[1mcorrect&amp#27;[0m &amp#27;[90m# stepdefinitions.StepDefinitions.prepareCreateBookingObject(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send create booking http request&amp#27;[0m           &amp#27;[90m# stepdefinitions.StepDefinitions.sendCreateBookingRequest()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mResponse status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                &amp#27;[90m# stepdefinitions.StepDefinitions.checkResponseStatus(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mResponse contains correct booking information&amp#27;[0m &amp#27;[90m# stepdefinitions.StepDefinitions.checkCreateBookingResponseBookingObject()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mResponse has non-null id value&amp#27;[0m                &amp#27;[90m# stepdefinitions.StepDefinitions.checkCreateBookingResponseId()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Create booking fails due to malformed total price&quot;, &quot;Optional[Create booking]&quot;](2)" classname="runner.TestRunner" time="0.901">
+    <failure message="expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[4]00> but was:<[2]00>
+]]></failure>
+    <system-out><![CDATA[
+Scenario Outline: Create booking fails due to malformed total price &amp#27;[90m# src/test/resources/features/createBooking.feature:17&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI set create booking request object &amp#27;[0m&amp#27;[32m&amp#27;[1mnegative&amp#27;[0m                &amp#27;[90m# stepdefinitions.StepDefinitions.prepareCreateBookingObject(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mSet total price to &amp#27;[0m&amp#27;[32m&amp#27;[1m-50&amp#27;[0m                                        &amp#27;[90m# stepdefinitions.StepDefinitions.setPrice(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send create booking http request&amp#27;[0m                           &amp#27;[90m# stepdefinitions.StepDefinitions.sendCreateBookingRequest()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mResponse status should be &amp#27;[0m&amp#27;[31m&amp#27;[1m400&amp#27;[0m                                &amp#27;[90m# stepdefinitions.StepDefinitions.checkResponseStatus(int)&amp#27;[0m
+      &amp#27;[31morg.junit.ComparisonFailure: expected:<[4]00> but was:<[2]00>
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at stepdefinitions.StepDefinitions.checkResponseStatus(StepDefinitions.java:52)
+	at âœ½.Response status should be 400(file:///D:/Projects/billiemission2120/BillieMission2120TestFramework/src/test/resources/features/createBooking.feature:14)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Create booking fails due to malformed total price&quot;, &quot;Optional[Create booking]&quot;](3)" classname="runner.TestRunner" time="0.865">
+    <failure message="expected:&lt;[4]00&gt; but was:&lt;[2]00&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[4]00> but was:<[2]00>
+]]></failure>
+    <system-out><![CDATA[
+Scenario Outline: Create booking fails due to malformed total price &amp#27;[90m# src/test/resources/features/createBooking.feature:18&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI set create booking request object &amp#27;[0m&amp#27;[32m&amp#27;[1mtext&amp#27;[0m                    &amp#27;[90m# stepdefinitions.StepDefinitions.prepareCreateBookingObject(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mSet total price to &amp#27;[0m&amp#27;[32m&amp#27;[1mASD&amp#27;[0m                                        &amp#27;[90m# stepdefinitions.StepDefinitions.setPrice(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send create booking http request&amp#27;[0m                           &amp#27;[90m# stepdefinitions.StepDefinitions.sendCreateBookingRequest()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mResponse status should be &amp#27;[0m&amp#27;[31m&amp#27;[1m400&amp#27;[0m                                &amp#27;[90m# stepdefinitions.StepDefinitions.checkResponseStatus(int)&amp#27;[0m
+      &amp#27;[31morg.junit.ComparisonFailure: expected:<[4]00> but was:<[2]00>
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at stepdefinitions.StepDefinitions.checkResponseStatus(StepDefinitions.java:52)
+	at âœ½.Response status should be 400(file:///D:/Projects/billiemission2120/BillieMission2120TestFramework/src/test/resources/features/createBooking.feature:14)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Create booking fails due to malformed total price&quot;, &quot;Optional[Create booking]&quot;](4)" classname="runner.TestRunner" time="0.844">
+    <system-out><![CDATA[
+Scenario Outline: Create booking fails due to malformed total price &amp#27;[90m# src/test/resources/features/createBooking.feature:19&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI set create booking request object &amp#27;[0m&amp#27;[32m&amp#27;[1mnumber&amp#27;[0m                  &amp#27;[90m# stepdefinitions.StepDefinitions.prepareCreateBookingObject(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mSet total price to &amp#27;[0m&amp#27;[32m&amp#27;[1m10&amp#27;[0m                                         &amp#27;[90m# stepdefinitions.StepDefinitions.setPrice(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send create booking http request&amp#27;[0m                           &amp#27;[90m# stepdefinitions.StepDefinitions.sendCreateBookingRequest()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mResponse status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                &amp#27;[90m# stepdefinitions.StepDefinitions.checkResponseStatus(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Delete booking by id&quot;, &quot;Optional[Delete booking.]&quot;](5)" classname="runner.TestRunner" time="1.129">
+    <system-out><![CDATA[
+Scenario: Delete booking by id                      &amp#27;[90m# src/test/resources/features/deleteBooking.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI set create booking request object &amp#27;[0m&amp#27;[32m&amp#27;[1mcorrect&amp#27;[0m &amp#27;[90m# stepdefinitions.StepDefinitions.prepareCreateBookingObject(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI send create booking http request&amp#27;[0m            &amp#27;[90m# stepdefinitions.StepDefinitions.sendCreateBookingRequest()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have authorisation data&amp#27;[0m                   &amp#27;[90m# stepdefinitions.StepDefinitions.prepareAuthorisationData()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send delete booking http request&amp#27;[0m           &amp#27;[90m# stepdefinitions.StepDefinitions.sendDeleteBookingRequest()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mResponse status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m201&amp#27;[0m                &amp#27;[90m# stepdefinitions.StepDefinitions.checkResponseStatus(int)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send get booking http request&amp#27;[0m              &amp#27;[90m# stepdefinitions.StepDefinitions.sendGetBookingRequest()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mShould throw exception&amp#27;[0m                       &amp#27;[90m# stepdefinitions.StepDefinitions.hasException()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Get booking by id&quot;, &quot;Optional[Get booking]&quot;](6)" classname="runner.TestRunner" time="1.063">
+    <system-out><![CDATA[
+Scenario: Get booking by id                                              &amp#27;[90m# src/test/resources/features/getBooking.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI set create booking request object &amp#27;[0m&amp#27;[32m&amp#27;[1mcorrect&amp#27;[0m                      &amp#27;[90m# stepdefinitions.StepDefinitions.prepareCreateBookingObject(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI send create booking http request&amp#27;[0m                                 &amp#27;[90m# stepdefinitions.StepDefinitions.sendCreateBookingRequest()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send get booking http request&amp#27;[0m                                   &amp#27;[90m# stepdefinitions.StepDefinitions.sendGetBookingRequest()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mResponse status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                     &amp#27;[90m# stepdefinitions.StepDefinitions.checkResponseStatus(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mResponse body object booking matches update booking request object&amp#27;[0m &amp#27;[90m# stepdefinitions.StepDefinitions.checkBookingResponseBookingObject()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Update booking&quot;, &quot;Optional[Update booking]&quot;](7)" classname="runner.TestRunner" time="1.01">
+    <system-out><![CDATA[
+Scenario: Update booking                                                 &amp#27;[90m# src/test/resources/features/updateBooking.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI set create booking request object &amp#27;[0m&amp#27;[32m&amp#27;[1mcorrect&amp#27;[0m                      &amp#27;[90m# stepdefinitions.StepDefinitions.prepareCreateBookingObject(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI send create booking http request&amp#27;[0m                                 &amp#27;[90m# stepdefinitions.StepDefinitions.sendCreateBookingRequest()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI have authorisation data&amp#27;[0m                                          &amp#27;[90m# stepdefinitions.StepDefinitions.prepareAuthorisationData()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send update booking http request&amp#27;[0m                                &amp#27;[90m# stepdefinitions.StepDefinitions.sendUpdateBookingRequest()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mResponse status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                     &amp#27;[90m# stepdefinitions.StepDefinitions.checkResponseStatus(int)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mResponse body object booking matches update booking request object&amp#27;[0m &amp#27;[90m# stepdefinitions.StepDefinitions.checkBookingResponseBookingObject()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Update booking fails due to wrong date&quot;, &quot;Optional[Update booking]&quot;](8)" classname="runner.TestRunner" time="1.126">
+    <system-out><![CDATA[
+Scenario Outline: Update booking fails due to wrong date &amp#27;[90m# src/test/resources/features/updateBooking.feature:21&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI set create booking request object &amp#27;[0m&amp#27;[32m&amp#27;[1mtext&amp#27;[0m         &amp#27;[90m# stepdefinitions.StepDefinitions.prepareCreateBookingObject(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI send create booking http request&amp#27;[0m                 &amp#27;[90m# stepdefinitions.StepDefinitions.sendCreateBookingRequest()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI have authorisation data&amp#27;[0m                          &amp#27;[90m# stepdefinitions.StepDefinitions.prepareAuthorisationData()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI have previously created booking&amp#27;[0m                  &amp#27;[90m# stepdefinitions.StepDefinitions.prepareUpdateBookingObject()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI change dates to &amp#27;[0m&amp#27;[32m&amp#27;[1mASD&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1mBSD&amp#27;[0m                      &amp#27;[90m# stepdefinitions.StepDefinitions.prepareBookingDates(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send update booking http request&amp#27;[0m                &amp#27;[90m# stepdefinitions.StepDefinitions.sendUpdateBookingRequest()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mShould throw exception&amp#27;[0m                            &amp#27;[90m# stepdefinitions.StepDefinitions.hasException()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Update booking fails due to wrong date&quot;, &quot;Optional[Update booking]&quot;](9)" classname="runner.TestRunner" time="1.084">
+    <failure message="&#10;Expecting value to be true but was false expected:&lt;[tru]e&gt; but was:&lt;[fals]e&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+
+Expecting value to be true but was false expected:<[tru]e> but was:<[fals]e>
+]]></failure>
+    <system-out><![CDATA[
+Scenario Outline: Update booking fails due to wrong date &amp#27;[90m# src/test/resources/features/updateBooking.feature:22&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI set create booking request object &amp#27;[0m&amp#27;[32m&amp#27;[1mcheckin&amp#27;[0m      &amp#27;[90m# stepdefinitions.StepDefinitions.prepareCreateBookingObject(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI send create booking http request&amp#27;[0m                 &amp#27;[90m# stepdefinitions.StepDefinitions.sendCreateBookingRequest()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI have authorisation data&amp#27;[0m                          &amp#27;[90m# stepdefinitions.StepDefinitions.prepareAuthorisationData()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI have previously created booking&amp#27;[0m                  &amp#27;[90m# stepdefinitions.StepDefinitions.prepareUpdateBookingObject()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI change dates to &amp#27;[0m&amp#27;[32m&amp#27;[1m2021-01-10&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m2021-01-01&amp#27;[0m        &amp#27;[90m# stepdefinitions.StepDefinitions.prepareBookingDates(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send update booking http request&amp#27;[0m                &amp#27;[90m# stepdefinitions.StepDefinitions.sendUpdateBookingRequest()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mShould throw exception&amp#27;[0m                            &amp#27;[90m# stepdefinitions.StepDefinitions.hasException()&amp#27;[0m
+      &amp#27;[31morg.junit.ComparisonFailure: 
+Expecting value to be true but was false expected:<[tru]e> but was:<[fals]e>
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at stepdefinitions.StepDefinitions.hasException(StepDefinitions.java:118)
+	at âœ½.Should throw exception(file:///D:/Projects/billiemission2120/BillieMission2120TestFramework/src/test/resources/features/updateBooking.feature:18)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Update booking fails due to wrong date&quot;, &quot;Optional[Update booking]&quot;](10)" classname="runner.TestRunner" time="1.089">
+    <failure message="&#10;Expecting value to be true but was false expected:&lt;[tru]e&gt; but was:&lt;[fals]e&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+
+Expecting value to be true but was false expected:<[tru]e> but was:<[fals]e>
+]]></failure>
+    <system-out><![CDATA[
+Scenario Outline: Update booking fails due to wrong date &amp#27;[90m# src/test/resources/features/updateBooking.feature:23&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI set create booking request object &amp#27;[0m&amp#27;[32m&amp#27;[1mwrongformat&amp#27;[0m  &amp#27;[90m# stepdefinitions.StepDefinitions.prepareCreateBookingObject(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI send create booking http request&amp#27;[0m                 &amp#27;[90m# stepdefinitions.StepDefinitions.sendCreateBookingRequest()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI have authorisation data&amp#27;[0m                          &amp#27;[90m# stepdefinitions.StepDefinitions.prepareAuthorisationData()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI have previously created booking&amp#27;[0m                  &amp#27;[90m# stepdefinitions.StepDefinitions.prepareUpdateBookingObject()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI change dates to &amp#27;[0m&amp#27;[32m&amp#27;[1m2021-01&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m2021-01&amp#27;[0m              &amp#27;[90m# stepdefinitions.StepDefinitions.prepareBookingDates(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send update booking http request&amp#27;[0m                &amp#27;[90m# stepdefinitions.StepDefinitions.sendUpdateBookingRequest()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mShould throw exception&amp#27;[0m                            &amp#27;[90m# stepdefinitions.StepDefinitions.hasException()&amp#27;[0m
+      &amp#27;[31morg.junit.ComparisonFailure: 
+Expecting value to be true but was false expected:<[tru]e> but was:<[fals]e>
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at stepdefinitions.StepDefinitions.hasException(StepDefinitions.java:118)
+	at âœ½.Should throw exception(file:///D:/Projects/billiemission2120/BillieMission2120TestFramework/src/test/resources/features/updateBooking.feature:18)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Update booking fails due to wrong date&quot;, &quot;Optional[Update booking]&quot;](11)" classname="runner.TestRunner" time="1.012">
+    <system-out><![CDATA[
+Scenario Outline: Update booking fails due to wrong date &amp#27;[90m# src/test/resources/features/updateBooking.feature:24&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI set create booking request object &amp#27;[0m&amp#27;[32m&amp#27;[1mnull&amp#27;[0m         &amp#27;[90m# stepdefinitions.StepDefinitions.prepareCreateBookingObject(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI send create booking http request&amp#27;[0m                 &amp#27;[90m# stepdefinitions.StepDefinitions.sendCreateBookingRequest()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI have authorisation data&amp#27;[0m                          &amp#27;[90m# stepdefinitions.StepDefinitions.prepareAuthorisationData()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI have previously created booking&amp#27;[0m                  &amp#27;[90m# stepdefinitions.StepDefinitions.prepareUpdateBookingObject()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI change dates to &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m                        &amp#27;[90m# stepdefinitions.StepDefinitions.prepareBookingDates(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI send update booking http request&amp#27;[0m                &amp#27;[90m# stepdefinitions.StepDefinitions.sendUpdateBookingRequest()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mShould throw exception&amp#27;[0m                            &amp#27;[90m# stepdefinitions.StepDefinitions.hasException()&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>
