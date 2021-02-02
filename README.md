@@ -2,7 +2,7 @@
 
 ## Summary
 
-This is a test suit for Billie Mission 2120 task. 
+This is a test suite for Billie Mission 2120 task. 
 
 This suite goes through all CRUD operations of Restful-Booker API.
 There are 15 test cases implemented, 4 of them are currently failing.
@@ -24,7 +24,7 @@ or the following in main folder.
 ## Automation
 
 This repository is built for working with github workflows. Each commit to this repository will trigger a github action which will run all the tests.
-You may see all individual resutl in the following link.
+You may see all individual result in the following link.
 
 https://github.com/eylulakar/billiemission2120/actions
 
