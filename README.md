@@ -26,7 +26,7 @@ or the following in main folder.
 This repository is built for working with github workflows. Each commit to this repository will trigger a github action which will run all the tests.
 You may see all individual resutl in the following link.
 
-	https://github.com/eylulakar/billiemission2120/actions
+https://github.com/eylulakar/billiemission2120/actions
 
 
 ## Reports
@@ -37,13 +37,13 @@ After running the suite a report will be generated under the following folder:
 
 Alternatively you may access the report in the following link:
 	
-	https://eylulakar.github.io/billiemission2120/
+https://eylulakar.github.io/billiemission2120/
 
 
 ## Technologies
 
-	1. Java & Maven
-	1. Cucumber
-	1. TestNG
-	1. Okhttp3
+1. Java & Maven
+1. Cucumber
+1. TestNG
+1. Okhttp3
 	
