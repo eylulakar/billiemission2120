@@ -19,6 +19,6 @@ Feature: Update booking
     Examples:
       | scenario    | checkIn    | checkOut   |
       | text        | ASD        | BSD        |
-      | checkin     | 2120-01-10 | 2120-01-01 |
-      | wrongformat | 2120-01    | 2120-01    |
+      | checkin     | 2021-01-10 | 2021-01-01 |
+      | wrongformat | 2021-01    | 2021-01    |
       | null        | ""         | ""         |

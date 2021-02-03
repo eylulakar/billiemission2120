@@ -1,4 +1,4 @@
-Feature:Delete booking
+Feature:Delete booking.
 
   Scenario: Delete booking by id
     Given I set create booking request object correct

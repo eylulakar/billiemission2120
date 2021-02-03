@@ -16,4 +16,5 @@ Feature: Create booking
       | totalPrice | scenario | statusCode |
       | -50        | negative | 400        |
       | ASD        | text     | 400        |
+      | 10         | number   | 200        |
 
