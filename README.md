@@ -5,14 +5,21 @@
 This is a test suite for Billie Mission 2120 task. 
 
 This suite goes through all CRUD operations of Restful-Booker API.
-There are 15 test cases implemented, 4 of them are currently failing.
+There are 10 test cases implemented in total, and 4 of them are currently failing. Failing test cases are negative paths, and all of the cases' descriptions are explained in the 
+test documentation file.
+
+https://github.com/eylulakar/billiemission2120/BillieMission2120TestFramework/src/docs/BillieMission2120TestCasesDocumentation.docx
 
 In my professional opinion as a QA Expert, those cases should not pass and must be reported as defects. Please see the report or github workflow results.
 
+This is an example view of test execution results with cucumber in IntelliJ:
+
+![alt text](https://github.com/eylulakar/billiemission2120/tree/main/BillieMission2120TestFramework/src/exampleExecution.JPG)
 
 ## How to Run
 
-Test suite is available under -- folder. To run the suite either run the following under source folder:
+Test suite is available \src\test\resources\features directory. There are four feature files with multiple test cases. 
+To run the whole suite either run the following under source folder:
 
 	mvn package
 
