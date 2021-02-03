@@ -1,13 +1,12 @@
 # billiemission2120
 
-##Task 1 - Research
+# Task 1 - Research
 
 Please see the file:
 
 https://github.com/eylulakar/billiemission2120/blob/main/BillieMission2120TestFramework/docs/MartianBusinessProblems.txt
 
-
-##Task 2 - Problem Solving
+# Task 2 - Problem Solving
 
 Java - Maven Application 
 /BillieMission2120TestFramework 
