@@ -13,8 +13,9 @@ https://github.com/eylulakar/billiemission2120/BillieMission2120TestFramework/sr
 In my professional opinion as a QA Expert, those cases should not pass and must be reported as defects. Please see the report or github workflow results.
 
 This is an example view of test execution results with cucumber in IntelliJ:
+ 
+![exampleExecution](https://user-images.githubusercontent.com/6651987/106719323-35535e80-6613-11eb-8f56-c524b32f321b.JPG)
 
-![alt text](https://github.com/eylulakar/billiemission2120/tree/main/BillieMission2120TestFramework/src/exampleExecution.JPG)
 
 ## How to Run
 
