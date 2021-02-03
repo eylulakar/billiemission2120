@@ -6,9 +6,10 @@ This is a test suite for Billie Mission 2120 task.
 
 This suite goes through all CRUD operations of Restful-Booker API.
 There are 10 test cases implemented in total, and 4 of them are currently failing. Failing test cases are negative paths, and all of the cases' descriptions are explained in the 
-test documentation file.
+following file:
 
-https://github.com/eylulakar/billiemission2120/BillieMission2120TestFramework/src/docs/BillieMission2120TestCasesDocumentation.docx
+Test Cases Documentation
+https://github.com/eylulakar/billiemission2120/blob/main/BillieMission2120TestFramework/docs/BillieMission2120TestCasesDocumentation.docx
 
 In my professional opinion as a QA Expert, those cases should not pass and must be reported as defects. Please see the report or github workflow results.
 
