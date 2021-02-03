@@ -1,5 +1,17 @@
 # billiemission2120
 
+##Task 1 - Research
+
+Please see the file:
+
+https://github.com/eylulakar/billiemission2120/blob/main/BillieMission2120TestFramework/docs/MartianBusinessProblems.txt
+
+
+##Task 2 - Problem Solving
+
+Java - Maven Application 
+/BillieMission2120TestFramework 
+
 ## Summary
 
 This is a test suite for Billie Mission 2120 task. 
@@ -51,7 +63,7 @@ https://eylulakar.github.io/billiemission2120/
 
 ## Technologies
 
-1. Java & Maven
+1. Java & Maven (project developed using IntelliJ IDE)
 1. Cucumber
 1. TestNG
 1. Okhttp3
