@@ -1,10 +1,7 @@
 # billiemission2120
 
 # Task 1 - Research
-
-Please see the file:
-
-https://github.com/eylulakar/billiemission2120/blob/main/BillieMission2120TestFramework/docs/MartianBusinessProblems.txt
+TBA
 
 # Task 2 - Problem Solving
 
